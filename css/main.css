@@ -66,6 +66,10 @@ h2 {
   margin: 0;
 }
 
+.home-layout {
+  padding-top: 80px;
+}
+
 
 /* Navigation */
 .nav {

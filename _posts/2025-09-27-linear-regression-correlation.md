@@ -12,7 +12,7 @@ In simple linear regression, the slope parameter is a simple function of the cor
 
 Consider *simple linear regression* or linear regression with a single independent variable,
 
-$$y_n = \alpha + \beta x_n + \varepsilon_n. \quad\quad (1)$$
+$$y_n = \alpha + \beta x_n + \varepsilon_n. \tag{1}$$
 
 $\beta$ is the model's *slope*, and $\alpha$ is the model's *intercept*. There is an interesting relationship between the estimated linear coefficient $\hat{\beta}$ and Pearson's correlation coefficient between the predictors and targets, $\rho_{xy}$. The goal of this post is to understand this relationship better.
 
@@ -20,7 +20,7 @@ $\beta$ is the model's *slope*, and $\alpha$ is the model's *intercept*. There i
 
 Let's rederive the normal equations for ordinary least squares (OLS), which minimizes the sum of squared residuals:
 
-$$J(\beta, \alpha) = \sum_{n=1}^{N} (y_n - \alpha - \beta x_n)^2, \quad\quad (2)$$
+$$J(\beta, \alpha) = \sum_{n=1}^{N} (y_n - \alpha - \beta x_n)^2, \tag{2}$$
 
 $$\hat{\alpha}, \hat{\beta} = \underset{\alpha,\beta}{\text{argmin}} \, J(\beta, \alpha).$$
 
@@ -30,7 +30,7 @@ First, let's solve for intercept $\alpha$. We take the derivative of the objecti
 
 $$\frac{dJ}{d\alpha} = \sum_{n=1}^{N} \frac{d}{d\alpha} (y_n - \alpha - \beta x_n)^2$$
 
-$$= \sum_{n=1}^{N} 2(y_n - \alpha - \beta x_n)(-1) \quad\quad (3)$$
+$$= \sum_{n=1}^{N} 2(y_n - \alpha - \beta x_n)(-1) \tag{3}$$
 
 Setting this equal to zero and solving for $\alpha$:
 
@@ -40,7 +40,7 @@ $$\sum_{n=1}^{N} (y_n - \alpha - \beta x_n) = 0$$
 
 $$\sum_{n=1}^{N} y_n - N\alpha - \beta \sum_{n=1}^{N} x_n = 0$$
 
-$$\hat{\alpha} = \frac{1}{N} \sum_{n=1}^{N} y_n - \hat{\beta} \frac{1}{N} \sum_{n=1}^{N} x_n = \bar{y} - \hat{\beta} \bar{x} \quad\quad (4)$$
+$$\hat{\alpha} = \frac{1}{N} \sum_{n=1}^{N} y_n - \hat{\beta} \frac{1}{N} \sum_{n=1}^{N} x_n = \bar{y} - \hat{\beta} \bar{x} \tag{4}$$
 
 ## The slope-correlation relationship
 
@@ -58,21 +58,21 @@ $$\sum_{n=1}^{N} (y_n - \bar{y}) x_n + \hat{\beta} \sum_{n=1}^{N} (\bar{x} - x_n
 
 After some algebraic manipulation, this leads to:
 
-$$\hat{\beta} = \frac{\sum_{n=1}^{N} (x_n - \bar{x})(y_n - \bar{y})}{\sum_{n=1}^{N} (x_n - \bar{x})^2} = \frac{\text{Cov}(x,y)}{\text{Var}(x)} \quad\quad (5)$$
+$$\hat{\beta} = \frac{\sum_{n=1}^{N} (x_n - \bar{x})(y_n - \bar{y})}{\sum_{n=1}^{N} (x_n - \bar{x})^2} = \frac{\text{Cov}(x,y)}{\text{Var}(x)} \tag{5}$$
 
 ## Connection to correlation
 
 The Pearson correlation coefficient is defined as:
 
-$$\rho_{xy} = \frac{\text{Cov}(x,y)}{\sqrt{\text{Var}(x)} \sqrt{\text{Var}(y)}} \quad\quad (6)$$
+$$\rho_{xy} = \frac{\text{Cov}(x,y)}{\sqrt{\text{Var}(x)} \sqrt{\text{Var}(y)}} \tag{6}$$
 
 Substituting this into our expression for $\hat{\beta}$:
 
-$$\hat{\beta} = \frac{\text{Cov}(x,y)}{\text{Var}(x)} = \rho_{xy} \frac{\sqrt{\text{Var}(x)} \sqrt{\text{Var}(y)}}{\text{Var}(x)} = \rho_{xy} \frac{\sqrt{\text{Var}(y)}}{\sqrt{\text{Var}(x)}} \quad\quad (7)$$
+$$\hat{\beta} = \frac{\text{Cov}(x,y)}{\text{Var}(x)} = \rho_{xy} \frac{\sqrt{\text{Var}(x)} \sqrt{\text{Var}(y)}}{\text{Var}(x)} = \rho_{xy} \frac{\sqrt{\text{Var}(y)}}{\sqrt{\text{Var}(x)}} \tag{7}$$
 
 Therefore:
 
-$$\boxed{\hat{\beta} = \rho_{xy} \frac{\sigma_y}{\sigma_x}} \quad\quad (8)$$
+$$\boxed{\hat{\beta} = \rho_{xy} \frac{\sigma_y}{\sigma_x}} \tag{8}$$
 
 ## Implications
 
