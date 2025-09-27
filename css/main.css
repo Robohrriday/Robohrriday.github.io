@@ -97,36 +97,6 @@ h2 {
   margin-right: 25px;
 }
 
-/* Main content areas */
-.hero {
-  padding: 60px 0;
-  text-align: center;
-}
-
-.hero .intro {
-  font-size: 1.2em;
-  color: rgba(0, 0, 0, 0.7);
-  margin-bottom: 30px;
-  line-height: 1.5em;
-}
-
-.hero .quote {
-  font-style: italic;
-  margin: 40px 0;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.02);
-  border-left: 4px solid rgba(0, 0, 0, 0.1);
-}
-
-.hero .quote p {
-  margin-bottom: 10px;
-}
-
-.hero .quote a {
-  font-size: 0.9em;
-  color: rgba(0, 0, 0, 0.5);
-}
-
 /* Blog section */
 .section {
   margin: 40px 0;
@@ -237,13 +207,13 @@ h2 {
 }
 
 /* Blog post header */
-.post-header {
+.blog-post-header {
   margin-bottom: 40px;
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.post-title {
+.blog-post-title {
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
@@ -251,14 +221,14 @@ h2 {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.post-subtitle {
+.blog-post-subtitle {
   font-size: 1.1rem;
   color: rgba(0, 0, 0, 0.7);
   margin-bottom: 20px;
   font-style: italic;
 }
 
-.post-meta {
+.blog-post-meta {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -266,8 +236,8 @@ h2 {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.post-published,
-.post-author {
+.blog-post-published,
+.blog-post-author {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -282,60 +252,60 @@ h2 {
 }
 
 /* Blog post content */
-.post-content {
+.blog-post-content {
   font-size: 1rem;
   line-height: 1.7;
   color: rgba(0, 0, 0, 0.8);
 }
 
-.post-content h1,
-.post-content h2,
-.post-content h3,
-.post-content h4,
-.post-content h5,
-.post-content h6 {
+.blog-post-content h1,
+.blog-post-content h2,
+.blog-post-content h3,
+.blog-post-content h4,
+.blog-post-content h5,
+.blog-post-content h6 {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.9);
 }
 
-.post-content h1 {
+.blog-post-content h1 {
   font-size: 1.8rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 0.5rem;
 }
 
-.post-content h2 {
+.blog-post-content h2 {
   font-size: 1.5rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 0.3rem;
 }
 
-.post-content h3 {
+.blog-post-content h3 {
   font-size: 1.3rem;
 }
 
-.post-content h4 {
+.blog-post-content h4 {
   font-size: 1.1rem;
 }
 
-.post-content p {
+.blog-post-content p {
   margin-bottom: 1.5rem;
   text-align: justify;
 }
 
-.post-content ul,
-.post-content ol {
+.blog-post-content ul,
+.blog-post-content ol {
   margin-bottom: 1.5rem;
   padding-left: 2rem;
 }
 
-.post-content li {
+.blog-post-content li {
   margin-bottom: 0.5rem;
 }
 
-.post-content blockquote {
+.blog-post-content blockquote {
   margin: 2rem 0;
   padding: 1rem 1.5rem;
   border-left: 4px solid rgba(0, 0, 0, 0.2);
@@ -344,7 +314,7 @@ h2 {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.post-content code {
+.blog-post-content code {
   background-color: rgba(0, 0, 0, 0.05);
   padding: 0.2rem 0.4rem;
   border-radius: 3px;
@@ -352,7 +322,7 @@ h2 {
   font-size: 0.9rem;
 }
 
-.post-content pre {
+.blog-post-content pre {
   background-color: rgba(0, 0, 0, 0.05);
   padding: 1rem;
   border-radius: 5px;
@@ -360,38 +330,38 @@ h2 {
   margin: 1.5rem 0;
 }
 
-.post-content pre code {
+.blog-post-content pre code {
   background-color: transparent;
   padding: 0;
 }
 
 /* Mathematical expressions */
-.post-content .MathJax {
+.blog-post-content .MathJax {
   font-size: 1.1em !important;
 }
 
-.post-content mjx-container[jax="CHTML"][display="true"] {
+.blog-post-content mjx-container[jax="CHTML"][display="true"] {
   margin: 1.5rem 0;
   text-align: center;
 }
 
 /* Equation numbering */
-.post-content .equation-number {
+.blog-post-content .equation-number {
   float: right;
   color: rgba(0, 0, 0, 0.6);
   font-weight: 500;
 }
 
 /* Blog post footer */
-.post-footer {
+.blog-post-footer {
   margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 0.9rem;
 }
 
-.post-categories,
-.post-tags {
+.blog-post-categories,
+.blog-post-tags {
   margin-bottom: 1rem;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -408,15 +378,15 @@ h2 {
     padding: 20px 15px;
   }
   
-  .post-title {
+  .blog-post-title {
     font-size: 1.6rem;
   }
-  
-  .post-subtitle {
+
+  .blog-post-subtitle {
     font-size: 1rem;
   }
   
-  .post-meta {
+  .blog-post-meta {
     font-size: 0.8rem;
   }
 }
