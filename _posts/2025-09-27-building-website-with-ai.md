@@ -4,8 +4,7 @@ title: "How we (AI and I) built my personal website?"
 subtitle: "And how you can too!"
 date: 2025-09-27
 author: Robohrriday
-categories: [web-development, ai, github, tutorial]
-tags: [ai, copilot, jekyll, web-development, github-pages]
+tags: [ai, general, github]
 ---
 
 ## New Beginnings
