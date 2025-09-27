@@ -1,17 +1,18 @@
 ---
-layout: default
+layout: blog_template
 title: "Building a Personal Website with AI: A Complete Guide"
 subtitle: "How GitHub Copilot and AI agents helped me create a minimal portfolio website in minutes"
 date: 2025-09-27
 author: Robohrriday
 categories: [web-development, ai, github, tutorial]
+tags: [ai, copilot, jekyll, web-development, github-pages]
 ---
 
-# Building a Personal Website with AI: A Complete Guide
+### New Beginnings
 
 Ever wondered how AI can help you build a complete website from scratch? I recently built this very website you're reading with the help of GitHub Copilot and AI agents, and the experience was fascinating. Let me walk you through the entire process, from initial generation to the final touches.
 
-## The Challenge: Starting from Zero
+### The Challenge: Starting from Zero
 
 I wanted to create a minimal, professional personal website that would serve as both a portfolio and a blog. The requirements were simple:
 - Clean, minimal design inspired by Gregory Gundersen's website
@@ -21,7 +22,7 @@ I wanted to create a minimal, professional personal website that would serve as 
 
 Instead of starting from scratch, I decided to leverage AI to accelerate the development process.
 
-## Phase 1: The AI-Generated Foundation
+### Phase 1: The AI-Generated Foundation
 
 ### Using GitHub Copilot for Initial Scaffolding
 
@@ -45,7 +46,7 @@ The initial commit by `copilot-swe-agent[bot]` created:
 ├── _includes/
 │   └── nav.html         # Navigation component
 ├── _posts/
-│   └── 2024-09-26-welcome-to-my-blog.md
+│   └── 2025-09-27-building-website-with-ai.md
 ├── css/
 │   └── main.css         # Complete styling (221 lines!)
 ├── index.html           # Homepage
@@ -81,36 +82,6 @@ Looking at the commit history from `copilot/fix-0588e45a-5a90-45b0-a1f2-bf11ad7b
 4. **Mobile Optimization**: Fixed navigation alignment on mobile devices
 5. **Design Polish**: Adjusted margins, spacing, and removed list bullets
 6. **Icon Integration**: Added favicon support for professional appearance
-
-### Key Improvements Made
-
-**Typography Enhancement**:
-```css
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-html {
-  font-family: 'Montserrat', 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-}
-```
-
-**Mobile Navigation Fix**:
-```css
-@media screen and (max-width: 480px) {
-  .nav ul li {
-    display: inline;  /* Changed from block to maintain horizontal layout */
-    margin-right: 15px;
-  }
-}
-```
-
-**Clean List Styling**:
-```css
-.home ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-```
 
 ## Phase 3: Advanced AI Integration with GitHub MCP
 

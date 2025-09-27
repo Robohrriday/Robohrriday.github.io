@@ -227,3 +227,196 @@ h2 {
     text-align: center;
   }
 }
+
+/* Blog Template Styles */
+.blog-post {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.6;
+}
+
+/* Blog post header */
+.post-header {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.post-subtitle {
+  font-size: 1.1rem;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.post-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.post-published,
+.post-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.meta-label {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Blog post content */
+.post-content {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.post-content h1 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.post-content h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.3rem;
+}
+
+.post-content h3 {
+  font-size: 1.3rem;
+}
+
+.post-content h4 {
+  font-size: 1.1rem;
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-content blockquote {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.02);
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.post-content code {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Consolas', 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+.post-content pre {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.post-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Mathematical expressions */
+.post-content .MathJax {
+  font-size: 1.1em !important;
+}
+
+.post-content mjx-container[jax="CHTML"][display="true"] {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+/* Equation numbering */
+.post-content .equation-number {
+  float: right;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+}
+
+/* Blog post footer */
+.post-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+}
+
+.post-categories,
+.post-tags {
+  margin-bottom: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.category-tag,
+.tag {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+}
+
+/* Responsive design for blog template */
+@media screen and (max-width: 700px) {
+  .blog-post {
+    padding: 20px 15px;
+  }
+  
+  .post-title {
+    font-size: 1.6rem;
+  }
+  
+  .post-subtitle {
+    font-size: 1rem;
+  }
+  
+  .post-meta {
+    font-size: 0.8rem;
+  }
+}
