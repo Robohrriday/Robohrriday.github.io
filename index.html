@@ -4,54 +4,7 @@ title: Home
 description: Personal portfolio and blog
 ---
 
-<div class="hero">
-    <h1>Welcome to My Portfolio</h1>
-    
-    <div class="intro">
-        <p>I'm passionate about technology, programming, and creating meaningful digital experiences.</p>
-    </div>
-    
-    <div class="quote">
-        <p>"The best way to predict the future is to invent it."</p>
-        <a href="https://en.wikiquote.org/wiki/Alan_Kay" target="_blank">Alan Kay</a>
-    </div>
-</div>
-
-<div class="section">
-    <h2>Recent Blog Posts</h2>
-    
-    {% if site.posts.size > 0 %}
-        {% for post in site.posts limit:3 %}
-            <div class="post-row">
-                <div class="post-title">
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                </div>
-                <div class="post-date">
-                    {{ post.date | date: "%B %d, %Y" }}
-                </div>
-                {% if post.subtitle %}
-                    <div class="post-subtitle">
-                        {{ post.subtitle }}
-                    </div>
-                {% endif %}
-                {% if post.excerpt %}
-                    <div class="post-subtitle">
-                        {{ post.excerpt | strip_html | truncatewords: 30 }}
-                    </div>
-                {% endif %}
-            </div>
-        {% endfor %}
-        
-        <p><a href="/blog">View all posts →</a></p>
-    {% else %}
-        <p>No blog posts yet. Check back soon!</p>
-    {% endif %}
-</div>
-
-<div class="section">
-    <h2>About Me</h2>
-    <div class="about">
-        <p>I'm a developer interested in building clean, functional, and user-friendly applications. This site serves as both a portfolio of my work and a place to share thoughts and learnings.</p>
-        <p><a href="/about">Learn more about me →</a></p>
-    </div>
-</div>
+<h1>Hrriday Ruparel</h1>
+<p><a href="/about">About Me</a></p>
+<p><a href="/blog">Blog</a></p>
+<p><a href="https://github.com/Robohrriday">Code</a></p>
