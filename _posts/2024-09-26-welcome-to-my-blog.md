@@ -1,15 +1,15 @@
 ---
 layout: default
-title: "Welcome to My Blog"
-subtitle: "Starting a journey of sharing knowledge and experiences"
+title: "How we (AI and I) built my website?"
+subtitle: "And how you can too!"
 date: 2024-09-26
 author: Robohrriday
 categories: [general, introduction]
 ---
 
-# Welcome to My Blog
+# New Beginnings
 
-This is my first blog post on my new personal portfolio website! I'm excited to start sharing my thoughts, experiences, and learnings in the world of technology and software development.
+This is my first blog post on my new personal website! I'm excited to start sharing my thoughts, experiences, and learnings.
 
 ## What to Expect
 
