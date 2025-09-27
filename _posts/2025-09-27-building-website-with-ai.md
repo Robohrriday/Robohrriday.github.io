@@ -38,14 +38,14 @@ The magic began when I stumbled upon GitHub Copilot's ability to generate entire
 
 <figure>
     <img src="_posts/media/2025-09-25-building-website-with-ai/new-repo.png" alt="new-repo">
-    <figcaption style="text-align:center; font-size:0.9em; color:#888;">
+    <figcaption>
         Prompt Copilot to generate starter code for your new repository
     </figcaption>
 </figure>
 
 <figure>
     <img src="_posts/media/2025-09-25-building-website-with-ai/prompt.png" alt="intital-prompt">
-    <figcaption style="text-align:center; font-size:0.9em; color:#888;">
+    <figcaption>
         The initial prompt I gave to GitHub Copilot to scaffold my website project (kindly excuse my grammar and spellings)
     </figcaption>
 </figure>
