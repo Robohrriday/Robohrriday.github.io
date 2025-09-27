@@ -111,47 +111,61 @@ h2 {
   margin-bottom: 30px;
 }
 
-/* Tag filtering */
+/* Tag filtering - Minimal Style */
 .tag-filter-section {
   margin: 30px 0 40px 0;
   padding: 20px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .tag-filter-section h3 {
-  font-size: 1.2em;
-  margin-bottom: 15px;
-  color: rgba(0, 0, 0, 0.8);
-  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
 }
 
 .tag-filter-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .tag-filter-btn {
-  background-color: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.7);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 8px 16px;
-  border-radius: 20px;
+  background: none;
+  color: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 12px 0;
+  margin-right: 30px;
   font-size: 0.9rem;
   font-family: inherit;
+  font-weight: 400;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  text-decoration: none;
 }
 
 .tag-filter-btn:hover {
-  background-color: rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.9);
 }
 
 .tag-filter-btn.active {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 500;
+}
+
+.tag-filter-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
   background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  border-color: rgba(0, 0, 0, 0.8);
 }
 
 .no-posts-message {
@@ -199,17 +213,23 @@ h2 {
 
 .post-tags {
   margin-top: 10px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: rgba(0, 0, 0, 0.5);
 }
 
-.post-tag {
-  background-color: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.7);
-  padding: 2px 8px;
-  border-radius: 12px;
-  font-size: 0.8rem;
+.post-tags::before {
+  content: 'Tags: ';
   font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.post-tag {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* About section */
@@ -260,12 +280,26 @@ h2 {
   }
   
   .tag-filter-container {
-    gap: 8px;
+    flex-direction: column;
+    gap: 0;
+    border-bottom: none;
   }
   
   .tag-filter-btn {
     font-size: 0.85rem;
-    padding: 6px 12px;
+    padding: 10px 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .tag-filter-btn.active::after {
+    display: none;
+  }
+  
+  .tag-filter-btn.active {
+    background-color: rgba(0, 0, 0, 0.02);
+    padding-left: 10px;
   }
 }
 

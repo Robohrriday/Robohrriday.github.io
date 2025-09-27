@@ -36,14 +36,14 @@ Why:
 The magic began when I stumbled upon GitHub Copilot's ability to generate entire project structures and repositories based on a simple prompt at the time of creating a new repo.
 
 <figure>
-    <img src="/_posts/media/2025-09-25-building-website-with-ai/new-repo.png" alt="new-repo">
+    <img src="/assets/images/2025-09-25-building-website-with-ai/new-repo.png" alt="GitHub Copilot new repository prompt">
     <figcaption>
         Prompt Copilot to generate starter code for your new repository
     </figcaption>
 </figure>
 
 <figure>
-    <img src="/_posts/media/2025-09-25-building-website-with-ai/prompt.png" alt="intital-prompt">
+    <img src="/assets/images/2025-09-25-building-website-with-ai/prompt.png" alt="Initial prompt to GitHub Copilot">
     <figcaption>
         The initial prompt I gave to GitHub Copilot to scaffold my website project (kindly excuse my grammar and spellings)
     </figcaption>

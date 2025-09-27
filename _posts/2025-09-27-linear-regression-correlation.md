@@ -4,8 +4,7 @@ title: "Simple Linear Regression and Correlation"
 subtitle: "Understanding the relationship between slope parameter and correlation coefficient"
 date: 2025-09-27
 author: Robohrriday
-categories: [mathematics, statistics, data-science]
-tags: [linear-regression, correlation, statistics, mathematics]
+tags: [statistics]
 ---
 
 In simple linear regression, the slope parameter is a simple function of the correlation between the targets and predictors. I derive this result and discuss a few consequences.
