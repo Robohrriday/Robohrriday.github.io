@@ -61,19 +61,6 @@
                 <div class="blog-post-content">
                     {{ content }}
                 </div>
-                
-                <!-- Blog post footer -->
-                <footer class="blog-post-footer">
-                    <!-- Tags -->
-                    {% if page.tags %}
-                        <div class="blog-post-tags">
-                            <span class="meta-label">TAGS:</span>
-                            {% for tag in page.tags %}
-                                <span class="tag">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
-                            {% endfor %}
-                        </div>
-                    {% endif %}
-                </footer>
             </article>
         </main>
     </div>
