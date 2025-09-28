@@ -74,6 +74,18 @@ The initial commit by `copilot-swe-agent[bot]` created:
 └── .gitignore          # Git ignore rules
 ```
 
+Some important details of the files listed above:
+
+| File/Directory         | Description |
+|------------------------|-------------|
+| `config.yml`           | Main configuration file for Jekyll. Controls site-wide settings like title, URL, plugins, and build options (you wouldn't need to change much here!) |
+| `_layouts/`            | Directory that stores the layout/structure of each page on your website. You can have multiple layouts (for example, one particular layout for home page and another for blogs). All you need to do is use the name of the layout in your markdown files or html content files to format according to the chosen layout. |
+| `_includes/`           | As far as I know, stores reusable HTML snippets. I mainly used it for storing navigation bar details which I use across different pages of my website. |
+| `_posts/`              | I use this directory for new blog posts (markdown files) mainly. |
+| `css/`                 | Contains `main.css` file that handles all the styling and formatting. From my understanding, it is convenient to define/configure a style here, for say how a paragraph should look or should you underline a hyperlink or how to format an image with caption. Once defined, you can use it in your markdown files or html content files as and when needed to avoid code repetition. |
+| `index.html`           | This is the main landing page of your website. This is the first page that will pop-up when you visit a website. |
+| `about.html`, `blog.html` | These are standalone pages of your website that one can navigate to. In my case, I have an about page and blog-listing page. You can have more pages for say projects, CV, etc. |
+
 ### Iterative Refinement with AI Assistance
 
 After the initial generation, I spent time refining the website through multiple iterations based on my design preferences, each guided by AI assistance:
