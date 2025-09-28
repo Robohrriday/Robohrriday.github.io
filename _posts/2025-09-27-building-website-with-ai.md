@@ -85,6 +85,7 @@ Some important details of the files listed above:
 | `css/`                 | Contains `main.css` file that handles all the styling and formatting. From my understanding, it is convenient to define/configure a style here, for say how a paragraph should look or should you underline a hyperlink or how to format an image with caption. Once defined, you can use it in your markdown files or html content files as and when needed to avoid code repetition. |
 | `index.html`           | This is the main landing page of your website. This is the first page that will pop-up when you visit a website. |
 | `about.html`, `blog.html` | These are standalone pages of your website that one can navigate to. In my case, I have an about page and blog-listing page. You can have more pages for say projects, CV, etc. |
+| `assets/`               | Not shown in the the initial generation but this is where you store all your media, for intance, images, GIFs, etc.|
 
 ### Iterative Refinement with AI Assistance
 
