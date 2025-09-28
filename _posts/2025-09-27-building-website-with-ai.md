@@ -16,7 +16,7 @@ Ever wondered how AI can help you build a complete website from scratch? I recen
 ## Walkthrough
 
 I wanted to create a minimal, professional personal website that would serve as both a portfolio and a blog. The requirements were simple:
-- Clean, minimal design inspired by [Gregory Gundersen's](https://gregorygundersen.com/) website
+- Clean, minimal design inspired by [_Gregory Gundersen's_](https://gregorygundersen.com/) website
 - **Jekyll-based** for GitHub Pages hosting
 - Responsive design that works on all devices
 - Easy to maintain and extend
@@ -27,9 +27,6 @@ Why:
 - Github Pages? Free static site hosting service provided by GitHub, allowing users to host websites directly from a GitHub repository.
 - Jekyll-based? Static site building tool; no CSS and HTML hassle for me. Write plain markdown files and Jekyll handles rest for you.
 - Minimal and Responsive-design? Easy to maintain and extend
-
-**Note**: It is necessary to the name the repository which will be hosting the GitHub pages as `<username>.github.io`. For instance, my GitHub username is `Robohrriday`, hence, the repo name hosting my website is also `Robohrriday.github.io`.
-
 
 ### Using GitHub Copilot for Initial Scaffolding
 
@@ -49,6 +46,7 @@ The magic began when I stumbled upon GitHub Copilot's ability to generate entire
     </figcaption>
 </figure>
 
+**Note**: It is necessary to the name the repository which will be hosting the GitHub pages as `<username>.github.io`. For instance, my GitHub username is `Robohrriday`, hence, the repo name hosting my website is also `Robohrriday.github.io`.
 
 What Copilot Generated:
 - Complete Jekyll project structure
@@ -81,10 +79,10 @@ The initial commit by `copilot-swe-agent[bot]` created:
 After the initial generation, I spent time refining the website through multiple iterations based on my design preferences, each guided by AI assistance:
 
 1. **Content Customization**: Modified `index.html` and CSS for personal branding
-2. **Typography Improvements**: Added Montserrat fonts
+2. **Typography Improvements**: Added Montserrat fonts (one of my favorite fonts!)
 3. **Mobile Optimization**: Fixed navigation alignment on mobile devices
 4. **Design Polish**: Adjusted margins and whitespaces
-5. **Other Integrations**: Added `favicon` and `MathJax`support
+5. **Other Integrations**: Added `favicon` and `MathJax` support plus tag-based blog filtering
 
 
 ## Conclusion
@@ -93,6 +91,6 @@ Leveraging AI helped me focus on creativity, strategy, and user experience while
 
 ## Resources
 
-- [GitHub Repository - Robohrriday.github.io](https://github.com/Robohrriday/Robohrriday.github.io)
-- [Gregory Gundersen's Website](https://gregorygundersen.com/)
-- [GitHub Pages](https://docs.github.com/en/pages)
+- [_GitHub Repository - Robohrriday.github.io_](https://github.com/Robohrriday/Robohrriday.github.io)
+- [_Gregory Gundersen's Website_](https://gregorygundersen.com/)
+- [_GitHub Pages_](https://docs.github.com/en/pages)
