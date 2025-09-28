@@ -566,3 +566,23 @@ h2 {
     border-radius: 4px;
   }
 }
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    font-size: 1em;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.75em 1em;
+    text-align: left;
+}
+th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+}
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
