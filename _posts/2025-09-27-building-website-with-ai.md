@@ -4,7 +4,7 @@ title: "How we (AI and I) built my personal website?"
 subtitle: "And how you can too!"
 date: 2025-09-27
 author: Robohrriday
-tags: [ai, general, github]
+tags: [general]
 ---
 
 ## New Beginnings
